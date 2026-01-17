@@ -21,7 +21,7 @@ const getRandomProductName = () => {
 };
 
 const getRandomPrice = (min = 5, max = 50) => {
-  return (Math.random() * (max - min) + min).toFixed(2); // returns string like "12.34"
+  return (Math.random() * (max - min) + min).toFixed(2);
 };
 
 const ProductsData = [];

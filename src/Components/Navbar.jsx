@@ -2,6 +2,8 @@ import React from 'react'
 import Logo from "../assets/Logo.svg"
 import { LuLogIn } from 'react-icons/lu'
 import { Handbag, Search } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import Category from '../Pages/Category'
 
 export default function Navbar() {
 
@@ -37,7 +39,10 @@ export default function Navbar() {
 
                 <div className='flex items-center gap-6'>
                     <Search className='hover:scale-105 ease-in-out duration-300 hover:text-green-100' />
-                    <Handbag className='hover:scale-105 ease-in-out duration-300 hover:text-green-100' />
+                    <Link to="/category" className="hover:text-green-100 duration-300"><Handbag /></Link>
+
+
+                    {/* <Handbag className='hover:scale-105 ease-in-out duration-300 hover:text-green-100' /> */}
                     <button className='button'>
                         <LuLogIn size={20} />
                         Login
